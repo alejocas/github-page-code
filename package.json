@@ -1,0 +1,27 @@
+{
+  "name": "alejocas.github.io",
+  "version": "0.1.0",
+  "description": "Personal webpage for me (ACR)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alejocas/alejocas.github.io.git"
+  },
+  "keywords": [
+    "Webpage",
+    "Internet",
+    "Portfolio"
+  ],
+  "author": "Alejandro Castaño Rojas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alejocas/alejocas.github.io/issues"
+  },
+  "homepage": "https://github.com/alejocas/alejocas.github.io#readme",
+  "dependencies": {
+    "vue": "^2.6.10"
+  }
+}
