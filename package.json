@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/alejocas/alejocas.github.io/issues"
   },
-  "homepage": "https://github.com/alejocas/alejocas.github.io#readme",
+  "homepage": "https://github.com/alejocas/alejocas.github.io/docs/index.html",
   "dependencies": {
     "vue": "^2.6.10"
   }

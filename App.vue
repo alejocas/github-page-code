@@ -18,6 +18,6 @@
 
 <script>
 export default {
-    
+    //"homepage": "https://github.com/alejocas/alejocas.github.io#readme"
 }
 </script>
