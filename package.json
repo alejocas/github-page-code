@@ -4,9 +4,10 @@
   "description": "Personal webpage for me (ACR)",
   "main": "App.vue",
   "scripts": {
-    "vue": "vue serve",
-    "build": "vue build --dest docs",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "vue build",
+    "deploy": "bash ./deploy.sh",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "vue": "vue serve"
   },
   "repository": {
     "type": "git",
