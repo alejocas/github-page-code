@@ -4,7 +4,7 @@
   "description": "Personal webpage for me (ACR)",
   "main": "App.vue",
   "scripts": {
-    "build": "vue build",
+    "build": "vue-cli-service build",
     "deploy": "bash ./deploy.sh",
     "vue": "vue serve",
     "serve": "vue-cli-service serve",
