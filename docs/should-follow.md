@@ -1,12 +1,15 @@
 # Architectural decisions
 
-# HTML Decisions
+## HTML Decisions
 To-do.
 
-# Behaviour decisions (Vue, JS, Vuex, Integration with API's)
+### Accesibility decisions
+I'm a Colombian citizen that believes in inclusion, but I can't talk about inclusion if my own website is only designed for those who can talk English (Or another unique language); ideally my info should be written in as many languages as possible, but I only can read/write/speak Spanish (my native language), English and other languages (programming languages, but they don't count here :v). So I've decided implement [i18n library for VueJS](https://kazupon.github.io/vue-i18n/).
+
+## Behaviour decisions (Vue, JS, Vuex, Integration with API's)
 To-do.
 
-# Style decisions
+## Style decisions
 I'm following these structures:
 Since I'm starting this project, I'm building a *Basic directory structure*, but in the future we can move on and build a *One step further* solution, everything is documented here in:
 [How to structure your project a SASS project](http://thesassway.com/beginner/how-to-structure-a-sass-project)?

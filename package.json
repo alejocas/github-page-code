@@ -1,13 +1,13 @@
 {
   "name": "alejocas.github.io",
   "version": "0.1.0",
-  "description": "Personal webpage for me (ACR)",
+  "description": "Personal webpage for me (ACR), work with NodeJS 10.15.1",
   "main": "App.vue",
   "scripts": {
     "build": "vue-cli-service build",
     "deploy": "bash ./deploy.sh",
-    "vue": "vue serve",
-    "serve": "vue-cli-service serve",
+    "vue": "vue serve | echo \"Isn't working :C\"",
+    "serve": "vue-cli-service serve --open",
     "lint": "vue-cli-service lint",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit"
@@ -31,6 +31,7 @@
     "register-service-worker": "^1.6.2",
     "vue": "^2.6.6",
     "vue-class-component": "^6.0.0",
+    "vue-i18n": "^8.10.0",
     "vue-property-decorator": "^7.0.0",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
@@ -41,7 +42,7 @@
     "@vue/cli-plugin-e2e-nightwatch": "^3.5.0",
     "@vue/cli-plugin-pwa": "^3.5.0",
     "@vue/cli-plugin-typescript": "^3.5.0",
-    "@vue/cli-plugin-unit-jest": "^3.5.0",
+    "@vue/cli-plugin-unit-jest": "^3.5.3",
     "@vue/cli-service": "^3.5.0",
     "@vue/test-utils": "1.0.0-beta.29",
     "babel-core": "7.0.0-bridge.0",

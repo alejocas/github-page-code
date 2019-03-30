@@ -1,7 +1,23 @@
-// Colors
-$primary-color-light: #ffa900;
-$primary-color-dark: #2c3e50;
-$alternative-color-dark: #663300;
+@import "./variables";
 
-//Fonts
-$primary-font-family: 'Avenir', Helvetica, Arial, sans-serif;
+#app {
+  font-family: $primary-font-family;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: $primary-color-dark;
+}
+
+nav {
+  padding: 30px;
+
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    color: $primary-color-dark;
+
+    &.router-link-exact-active {
+      color: $primary-color-light;
+    }
+  }
+}

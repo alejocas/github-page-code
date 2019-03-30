@@ -36,5 +36,8 @@ npm run test:e2e
 npm run test:unit
 ```
 
+### Personal note for everyone
+I've exposed a [document](https://github.com/alejocas/github-page-code/blob/master/docs/should-follow.md) with some decisions that I've taken in this project.
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
