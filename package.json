@@ -2,31 +2,17 @@
   "name": "alejocas.github.io",
   "version": "0.1.0",
   "description": "Personal webpage for me (ACR), work with NodeJS 10.15.1",
-  "main": "App.vue",
-  "scripts": {
-    "build": "vue-cli-service build",
-    "deploy": "bash ./deploy.sh",
-    "vue": "vue serve | echo \"Isn't working :C\"",
-    "serve": "vue-cli-service serve --open",
-    "lint": "vue-cli-service lint",
-    "test:e2e": "vue-cli-service test:e2e",
-    "test:unit": "vue-cli-service test:unit"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/alejocas/github-page-code.git"
-  },
-  "keywords": [
-    "Webpage",
-    "Internet",
-    "Portfolio"
-  ],
   "author": "Alejandro Castaño Rojas",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/alejocas/github-page-code.git/issues"
+  "scripts": {
+    "serve": "vue-cli-service serve --open",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "deploy": "bash ./deploy.sh",
+    "test:e2e": "vue-cli-service test:e2e",
+    "test:unit": "vue-cli-service test:unit",
+    "vue": "vue serve | echo \"Isn't working :C\""
   },
-  "homepage": "https://github.com/alejocas/github-page-code.git#readme.md",
+  "main": "App.vue",
   "dependencies": {
     "register-service-worker": "^1.6.2",
     "vue": "^2.6.6",
@@ -37,7 +23,9 @@
     "vuex": "^3.0.1"
   },
   "devDependencies": {
+    "@kazupon/vue-i18n-loader": "^0.3.0",
     "@types/jest": "^23.1.4",
+    "@types/webpack": "^4.4.0",
     "@vue/cli-plugin-babel": "^3.5.0",
     "@vue/cli-plugin-e2e-nightwatch": "^3.5.0",
     "@vue/cli-plugin-pwa": "^3.5.0",
@@ -50,6 +38,21 @@
     "sass-loader": "^7.1.0",
     "ts-jest": "^23.0.0",
     "typescript": "^3.2.1",
+    "vue-cli-plugin-i18n": "^0.5.2",
     "vue-template-compiler": "^2.5.21"
+  },
+  "bugs": {
+    "url": "https://github.com/alejocas/github-page-code.git/issues"
+  },
+  "homepage": "https://github.com/alejocas/github-page-code.git#readme.md",
+  "keywords": [
+    "Webpage",
+    "Internet",
+    "Portfolio"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alejocas/github-page-code.git"
   }
 }
