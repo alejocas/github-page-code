@@ -8,26 +8,26 @@
       <router-link to="/contact">{{ $t("navbar.contact") }}</router-link>
     </nav> -->
     <header>
-      <nav>
-        <a href="index.html"
-          ><span class="fa fa-gamepad"></span>Alejo's website</a
+      <v-card color="basil">
+        <v-card-title class="text-left justify-center py-6">
+          <h1 class="font-weight-bold display-3 basil--text">
+            Alejo's website
+          </h1>
+        </v-card-title>
+        <v-tabs
+          v-model="tab"
+          background-color="transparent"
+          color="basil"
+          grow
         >
-        <!-- if logo is image enable this   
-            <a class="navbar-brand" href="#index.html">
-                <img src="image-path" alt="Your logo" title="Your logo" style="height:35px;" />
-            </a> -->
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon fa fa-bars"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+          <v-tab
+            v-for="item in items"
+            :key="item.name"
+          >
+            <router-link class="tab" v-bind:to="item.route">{{ $t(item.name) }}</router-link>
+          </v-tab>
+        </v-tabs>
+        <!-- <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active mr-lg-4">
               <router-link to="/">{{ $t("navbar.home") }}</router-link>
@@ -47,8 +47,8 @@
               }}</router-link>
             </li>
           </ul>
-        </div>
-      </nav>
+        </div> -->
+      </v-card>
     </header>
     <router-view />
   </div>
@@ -56,4 +56,39 @@
 
 <style lang="scss">
 @import "./stylesheets/main";
+
+.tab{
+  width: 100%;
+  padding: 18px;
+}
 </style>
+
+<script lang="ts">
+import Vue from 'vue';
+
+export default Vue.extend({
+  name: 'App',
+
+  data: () => ({
+    tab: null,
+    items: [
+      {
+        name: 'navbar.home',
+        route: '/',
+      }, {
+        name: 'navbar.about',
+        route: '/about',
+      }, {
+        name: 'navbar.blog',
+        route: '/blog',
+      }, {
+        name: 'navbar.tools',
+        route: '/tools',
+      }, {
+        name: 'navbar.contact',
+        route: '/contact',
+      },
+    ],
+  }),
+});
+</script>
